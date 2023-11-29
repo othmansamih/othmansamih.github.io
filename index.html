@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- =====BOX ICONS===== -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta property="og:title" content="Othman SAMIH | Machine Learning Engineer">
+    <meta property="og:type" content="Portfolio">
+    <meta property="og:image" content="assets/img/20231127_200550.png">
+    <meta property=" og:url" content="https://othmansamih.github.io">
+    <meta property="og:descreption"
+        content="Master's student in Artificial Intelligence and Distributed Systems.">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:site_name" content="Othman SAMIH">
+    <title>Othman SAMIH</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/avatar.png" type="image/gif" sizes="16x16">
+</head>
+
+<body class=".contact__input">
+    <!--===== HEADER =====-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div class="logo-div">
+                <img src="assets/img/avatar.png" class="avatar" alt="avatar of me"><a href="#"
+                    class="nav__logo">Othman SAMIH</a>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <!-- <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li> -->
+                    <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+            <div class="theme-switcher-container">
+                <span>Theme</span>
+                <div class="theme-switcher dark" id="theme-toggle" data-mode="dark" onclick="toggleTheme(this)">
+                    <div class="switcher-btn">
+                        <i class="fa-solid fa-sun hidden"></i>
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="languages">
+                <a href="fr/index.html">FR</a>
+                <span>ENG</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main">
+        <!--===== HOME =====-->
+        <section class="home bd-grid section" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>I'm <span class="home__title-color">Othman</span></h1>
+
+                <a href="#contact" class="button">Contact</a>
+                <a href="assets/CV/CV - Othman SAMIH - EN.pdf" target="_blank" class="button-alt">Download CV <i
+                        class="fa-solid fa-file-arrow-down"></i></a>
+            </div>
+
+            <div class="home__social">
+                <a href="https://www.linkedin.com/in/othmansamih/" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/othmansamih" target="_blank" class="home__social-icon"><i
+                        class='bx bxl-github'></i></a>
+                <a href="https://api.whatsapp.com/send/?phone=212682284369&text=Hey!" target="_blank"
+                    class="home__social-icon"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/othman__samih/" target="_blank"
+                    class="home__social-icon"><i class="bx bxl-instagram"></i></a>
+            </div>
+
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" width="400" height="400"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="60" y="0" width="30%" href="assets/img/20231127_200550.png" />
+                    </g>
+                </svg>
+            </div>
+        </section>
+
+        <!--===== ABOUT =====-->
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="bd-grid">
+                <div>
+                    <h2 class="about__subtitle">I'm Othman SAMIH    </h2>
+                    <p class="about__text">
+                        Othman SAMIH, a dedicated Master’s Student specializing in 
+                        Artificial Intelligence. My journey in the world of technology has been a 
+                        fascinating exploration of the intersection between innovation and 
+                        problem-solving, all with a focus on the transformative power of
+                         Artificial Intelligence
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--===== WORK =====-->
+        <section class="work section" id="work">
+            <h2 class="section-title">Projects</h2>
+
+            <div class="work__container bd-grid ">
+                <div class="project-card">
+                    <a href="https://github.com/othmansamih/Moroccan-Law-Chatbot" target="_blank">
+                        <div class="img-container">
+                            <img src="assets/img/img5.jfif" alt="picture">
+                            <div class="modal">
+                                <button class="second-btn">View
+                                    code</button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h3>Moroccan law chatbot</h3>
+                        <div class="badges">
+                            <span>Python</span> <span>Langchain</span> <span>Streamlit</span> <span>Pinecone</span>
+                        </div>
+                        <p>
+                            Moroccan law chatbot providing answers on various legal topics including 
+                            business, taxes, and divorce, using a cloud-based dataset of Moroccan law 
+                            documents.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/othmansamih/Moroccan-Law-Chatbot" target="_blank"><button
+                                    class="second-btn">View
+                                    code</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/othmansamih/Real-Time-UK-license-plate-detection-and-recognition" target="_blank">
+                        <div class="img-container">
+                            <img src="assets/img/img3.png" alt="picture">
+                            <div class="modal">
+                                <button class="second-btn">View
+                                    code</button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h3>Real-time UK license plate detection and recognition </h3>
+                        <div class="badges">
+                            <span>Python</span> <span>Yolov8</span> <span>SORT</span>
+                            <span>EasyOCR</span>
+                        </div>
+                        <p>A real-time UK license plate identification system using advanced 
+                            computer vision and machine learning techniques for accurate detection and 
+                            character recognition.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/othmansamih/Real-Time-UK-license-plate-detection-and-recognition" target="_blank"><button
+                                    class="second-btn">View
+                                    code</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/othmansamih/Image-segmentation-using-Yolov8" target="_blank">
+                        <div class="img-container">
+                            <img src="assets/img/img7.jfif" alt="picture">
+                            <div class="modal">
+                                <button class="second-btn">View
+                                    code</button>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h3>Segmented bottles in a production line</h3>
+                        <div class="badges">
+                            <span>Python</span><span>Yolov8</span>
+                        </div>
+                        <p>
+                            Designing and implementing a cutting-edge system for segmenting bottles on 
+                            a production line, leveraging the power of YOLOv8.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/othmansamih/Image-segmentation-using-Yolov8" target="_blank"><button
+                                    class="second-btn">View
+                                    code</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <a href="https://github.com/othmansamih/An-attendance-system-using-a-QR-code" target="_blank">
+                        <div class="img-container">
+                            <img src="assets/img/img10.jfif" alt="picture">
+                            <div class="modal">
+                                <!-- <img src="https://slimani-ce.github.io/front-end-mentor-ch4/images/icon-view.svg" alt=""> -->
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h3>QR code attendance system</h3>
+                        <div class="badges">
+                            <span>Python</span><span>OpenCV</span>
+                        </div>
+                        <p>
+                            A QR attendance system designed to manage access control by scanning QR codes, 
+                            providing clear indications of whether access is accepted or denied.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/othmansamih/An-attendance-system-using-a-QR-code" target="_blank"><button
+                                    class="second-btn">View
+                                    code</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/othmansamih/AWS-Rekognition-Object-Detector" target="_blank">
+                        <div class="img-container">
+                            <img src="assets/img/img14.jpg" alt="picture">
+                            <div class="modal">
+                                <!-- <img src="https://slimani-ce.github.io/front-end-mentor-ch4/images/icon-view.svg" alt=""> -->
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h3>Object Detection with AWS Rekognition</h3>
+                        <div class="badges">
+                            <span>Python</span><span>AWS</span><span>OpenCV</span>
+                        </div>
+                        <p>
+                            A system that uses Amazon Rekognition Object Detector to identify objects 
+                            in images and videos. It can detect a wide range of objects.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/othmansamih/AWS-Rekognition-Object-Detector" target="_blank"><button
+                                    class="second-btn">View
+                                    code</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/othmansamih/Pneumonia-classification-web-app" target="_blank">
+                        <div class="img-container">
+                            <img src="assets/img/hq720.jpg" alt="picture">
+                            <div class="modal">
+                                <!-- <img src="https://slimani-ce.github.io/front-end-mentor-ch4/images/icon-view.svg" alt=""> -->
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h3>Pneumonia classification web app</h3>
+                        <div class="badges">
+                            <span>Python</span><span>Tensorflow</span><span>Streamlit</span>
+                        </div>
+                        <p>
+                            A pneumonia classification web app that identify pneumonia in chest X-ray images.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/othmansamih/Pneumonia-classification-web-app" target="_blank"><button
+                                    class="second-btn">View
+                                    code</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <a href="https://github.com/othmansamih/multiple-disease-prediction-system" target="_blank">
+                        <div class="img-container">
+                            <img src="assets/img/maxresdefault.jpg" alt="picture">
+                            <div class="modal">
+                                <!-- <img src="https://slimani-ce.github.io/front-end-mentor-ch4/images/icon-view.svg" alt=""> -->
+                                <i class="fa-solid fa-eye"></i>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="card-body">
+                        <h3>Multiple disease prediction system</h3>
+                        <div class="badges">
+                            <span>Python</span><span>Scikit-learn</span><span>Streamlit</span><span>Render</span>
+                        </div>
+                        <p>A predictive system capable of forecasting multiple diseases, including Diabetes, 
+                            heart disease, and Parkinson's, through the application of Machine Learning techniques.
+                        </p>
+                        <div class="card-footer">
+                            <a href="https://github.com/othmansamih/multiple-disease-prediction-system" target="_blank"><button
+                                    class="second-btn">View
+                                    code</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+        </section>
+
+        <!--===== CONTACT =====-->
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact__container bd-grid">
+                <form action="https://formsubmit.co/eb74f1904f59e9f7d394121875381439" method="POST">
+                    <input type="text" placeholder="Name" name="name" class="contact__input">
+                    <input type="mail" placeholder="Email" name="email" class="contact__input">
+                    <textarea placeholder="Your message here..." cols="0" rows="10" class="contact__input"
+                        name="userMsg" id="userMsg" cols="30" rows="10" spellcheck="false"
+                        data-ms-editor="true"></textarea>
+                    <input type="hidden" name="_next" value="https://slimani-ce.github.io/thanks">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <input type="submit" value="Send" class="contact__button button">
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+        <p class="footer__title">Othman SAMIH</p>
+        <div class="footer__social">
+            <a href="https://www.linkedin.com/in/othmansamih/" target="_blank" class="footer__icon"><i
+                    class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/othmansamih" target="_blank" class="footer__icon"><i
+                    class='bx bxl-github'></i></a>
+            <a href="https://api.whatsapp.com/send/?phone=212682284369&text=Hey!" target="_blank" class="footer__icon"><i
+                        class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.instagram.com/othman__samih/" target="_blank" class="footer__icon"><i
+                            class='bx bxl-instagram'></i></a>
+        </div>
+        <p class="footer__copy">&#169; othmansamih. 2023</p>
+    </footer>
+
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
