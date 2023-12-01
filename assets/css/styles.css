@@ -34,6 +34,14 @@
   --z-fixed: 100;
 }
 
+@media screen and (max-width: 1250px) {
+  .work__container  {
+    grid-template-columns: repeat(2, auto) !important;
+    justify-content: space-evenly !important;
+  }
+
+}
+
 @media screen and (min-width: 968px) {
   :root {
     --big-font-size: 3.5rem;
@@ -110,6 +118,8 @@ img {
 .section {
   padding-top: 3rem;
   padding-bottom: 2rem;
+  padding-left: 32px !important;
+  padding-right: 32px !important;
 }
 
 /*===== LAYOUT =====*/
@@ -128,6 +138,8 @@ img {
   z-index: var(--z-fixed);
   background-color: #fff;
   box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+  
+  /* padding: 0 32px; */
 }
 
 /*===== NAV =====*/
@@ -808,7 +820,20 @@ img {
   }
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 600px) {
+  .home__img {
+    position: absolute !important;
+    bottom: 60px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  .home__blob {
+    width: 250px;
+    margin-left: 60px;
+  }
+}
+
+@media screen and (min-width: 610px) {
   .home {
     padding: 4rem 0 2rem;
   }
@@ -850,6 +875,64 @@ img {
   }
 }
 
+@media screen and (max-width: 450px) {
+  .work__container {
+    grid-template-columns: repeat(1, auto) !important;
+    column-gap: 2rem!important;
+    padding-top: 2rem!important;
+  }
+
+  .section {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .about__text{
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .home__img {
+    width: 300px !important;
+    bottom: 60px !important;
+  }
+  
+  .work__container {
+    grid-template-columns: repeat(1, auto) !important;
+    column-gap: 2rem!important;
+    padding-top: 2rem!important;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .home__img {
+    /* width: 250px !important;
+    bottom: 150px !important; */
+  }
+
+  .home__data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__data a {
+    width: 240px;
+    margin: 0;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .home.bd-grid {
+    /* display: flex;
+    flex-direction: column; */
+    
+    /* row-gap: 0; */
+  }
+  /* .home.bd-grid > * {
+    position: relative;
+  } */
+}
 @media screen and (min-width: 768px) {
   body {
     margin: 0;
@@ -887,7 +970,7 @@ img {
   }
   .home__img {
     width: 400px;
-    bottom: 10%;
+    bottom: 0;
   }
   .about__container {
     padding-top: 2rem;
@@ -949,7 +1032,7 @@ img {
     margin-right: auto;
   }
   .home {
-    padding: 10rem 0 2rem;
+    padding: 7rem 0 2rem;
   }
   .home__img {
     width: 450px;
