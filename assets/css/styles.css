@@ -467,7 +467,7 @@ img {
 /* ===== WORK =====*/
 .project-card {
   width: 365px;
-  height: 480px;
+  height: 680px;
   border: 1px solid var(--third-color);
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
